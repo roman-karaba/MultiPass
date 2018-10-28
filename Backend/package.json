@@ -1,0 +1,66 @@
+{
+  "name": "multipass-backend",
+  "version": "1.0.0",
+  "description": "blockchain based course and study records management app",
+  "main": "index.js",
+  "scripts": {
+    "backend": "webpack --config ./webpack.config.js --mode development && node dist/backend-bundle.js",
+    "initapp": "node src/initApp.js",
+    "chaininfo": "node src/chainInfo.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git01lab.cs.univie.ac.at:a1301624/MultiPass.git"
+  },
+  "keywords": [
+    "blockchain",
+    "multichain",
+    "react",
+    "node",
+    "mongo",
+    "uni-wien"
+  ],
+  "author": "Roman Karaba",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "env",
+      "node8",
+      "react",
+      "stage-2"
+    ]
+  },
+  "dependencies": {
+    "bcrypt": "^2.0.1",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "express-formidable": "^1.0.0",
+    "jsonwebtoken": "^8.2.2",
+    "jwt-decode": "^2.2.0",
+    "mkdirp": "^0.5.1",
+    "mocha": "^5.1.1",
+    "mongodb": "^3.1.0-beta4",
+    "multer": "^1.3.0",
+    "multichain-node": "^2.2.0-version1.0.4",
+    "node-fetch": "^2.1.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-node8": "^1.2.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.15",
+    "webpack-dev-server": "^3.1.3"
+  }
+}

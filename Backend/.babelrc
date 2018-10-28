@@ -1,0 +1,8 @@
+{
+  "presets": [
+    "env",
+    "node8",
+    "react",
+    "stage-2"
+  ]
+}

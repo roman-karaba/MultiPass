@@ -1,0 +1,39 @@
+{
+  "name": "multipass-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-regular": "^5.0.13",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "@fortawesome/react-fontawesome": "0.0.20",
+    "@material-ui/core": "^1.2.3",
+    "@material-ui/icons": "^1.1.0",
+    "base64-js": "^1.3.0",
+    "history": "4.7.2",
+    "jsonwebtoken": "^8.3.0",
+    "moment": "2.22.1",
+    "node-sass-chokidar": "1.2.2",
+    "npm-run-all": "4.1.2",
+    "react": "16.3.1",
+    "react-datetime": "^2.14.0",
+    "react-dom": "16.3.1",
+    "react-nouislider": "2.0.1",
+    "react-router-dom": "4.2.2",
+    "react-scripts": "1.1.4",
+    "react-slick": "0.23.1",
+    "react-swipeable-views": "0.12.13"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "frontend": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.4"
+  }
+}

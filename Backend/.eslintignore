@@ -1,0 +1,3 @@
+node_modules/**
+front-end/dist/frontend-bundle.js
+back-end/dist/backend-bundle.js
